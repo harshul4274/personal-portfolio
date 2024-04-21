@@ -1,0 +1,126 @@
+#contactPage {
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactPageTitle {
+    font-size: 3rem;
+    margin-bottom: 0.1rem;    
+    color: aqua;
+}
+
+.contactDesc {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.skillsTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contactForm {
+    width: 100%;
+    max-width: 40rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name,
+.email,
+.msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.submitBtn {
+    background-color: yellowgreen;
+    color: #fff;
+    border: none;
+    border-radius: 0.75rem;
+    margin: 2rem 0;
+    padding: 0.75rem 3.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.submitBtn:hover {
+    background-color: green;
+    box-shadow: 0px 0px 10px #18dde9;
+    transform: scale(1.05);
+}
+
+.submitBtn:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    font-size: 3rem;
+    object-fit: cover;
+    height: 4rem;
+    width: 4rem;
+    margin: 0 0.75rem;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 0.75rem;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#linkedin {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+#github {
+    height: 4.5rem;
+    width: 4.5rem;
+    padding-bottom: 1rem;
+}
+
+a:hover img {
+    transition: all 1.05s;
+    transform: rotateY(360deg);
+}
+
+a img {
+    transition: all 1.05s;
+}
+
+a:hover img {
+    transform: rotateY(360deg);
+}
+
+a img {
+    transform: rotateY(0deg);
+}

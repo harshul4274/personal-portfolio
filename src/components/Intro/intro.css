@@ -1,0 +1,119 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+    animation: bgAnimation 20s infinite alternate linear; /* Add animation to the background */
+}
+
+@keyframes bgAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vh;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 5s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: yellow;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    transition: all 0.5s; /* Move transition here */
+}
+
+.btn:hover {
+    background-color: green;
+    box-shadow: 0px 0px 10px #18dde9;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+.btnImg {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+@media screen and (max-width:480px) {
+    .bg {
+        right: -20vw;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .hello {
+        font-size: 2.75rem;
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: auto;
+    }
+    .introContent {
+        justify-content: center;
+        color: white;
+        font-size: 2.45rem;
+    }
+    .introPara{
+        font-size: 0.65rem;
+        color: #333;
+        font-weight: 800;
+    }
+    .introName{
+        color: yellowgreen;
+    }
+}
